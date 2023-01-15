@@ -1,0 +1,223 @@
+:root {
+  /* Font */
+
+  /* Text colors*/
+  --title-txt-cl: #2e2f42;
+  --p-txt-cl: #434455;
+  --footer-p-txt-cl: #e7e9fc;
+  --light-logo-footer-cl: #f4f4fd;
+  --iris-logo-cl: #4d5ae5;
+
+  /* Background colors*/
+  --main-page-bg-cl: #2e2f42;
+  --cloud-bg-cl: #f4f4fd;
+
+  /*  Others*/
+  --prt-active-button: #404bbf;
+  --ptr-main-button: #f4f4fd;
+  --prt-button-txt-cl: #4d5ae5;
+  --success-cl: #31d0aa;
+  --success-75-cl: rgba(49, 208, 170, 0.75);
+  --success-50-cl: rgba(49, 208, 170, 0.5);
+  --success-10-cl: rgba(49, 208, 170, 0.1);
+  --modal-ovarlay-cl: #2e2f42;
+}
+
+body {
+  color: var(--p-txt-cl);
+  background-color: white;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo-dark {
+  color: #4d5ae5;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  position: absolute;
+  width: 115px;
+  height: 24px;
+  left: 156px;
+  top: 24px;
+}
+.logo-dark span {
+  color: #2e2f42;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+}
+.main-button:hover {
+  color: white;
+  background-color: var(--prt-active-button);
+  cursor: pointer;
+}
+.main-button {
+  color: white;
+  background-color: var(--prt-button-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.site-nav a {
+  color: #2e2f42;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 261px;
+  height: 24px;
+  left: 347px;
+  top: 24px;
+}
+
+.main-title {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 56px;
+  line-height: 1.07;
+}
+.main-page-bg {
+  background-color: var(--main-page-bg-cl);
+}
+.big-title {
+  color: var(--title-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.111;
+}
+
+.benefits h3 {
+  color: var(--title-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.benefits p {
+  color: var(--p-txt-cl);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+}
+.team h3 {
+  color: var(--title-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team p {
+  color: var(--p-txt-cl);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.portf-button .button:hover {
+  color: #f4f4fd;
+  background-color: var(--prt-active-button);
+  cursor: pointer;
+}
+.portf-button button {
+  color: #4d5ae5;
+  background-color: var(--cloud-bg-cl);
+}
+
+.site-nav .link {
+  color: var(--title-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.site-nav .link:hover {
+  color: var(--iris-logo-cl);
+}
+
+.contact-nav li a {
+  text-decoration: none;
+  color: var(--title-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contact-nav li a:focus,
+.contact-nav li a:hover {
+  color: var(--iris-logo-cl);
+}
+
+.footer {
+  background-color: var(--main-page-bg-cl);
+}
+
+.footer p {
+  color: var(--footer-p-txt-cl);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.logo-light {
+  color: #4d5ae5;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-light span {
+  color: #f4f4fd;
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.main-portf h2 {
+  color: var(--title-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.main-portf p {
+  color: var(--p-txt-cl);
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+}
