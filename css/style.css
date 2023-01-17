@@ -11,6 +11,7 @@
   /* Background colors*/
   --main-page-bg-cl: #2e2f42;
   --cloud-bg-cl: #f4f4fd;
+  --white-bg-cl: #ffffff;
 
   /*  Others*/
   --prt-active-button: #404bbf;
@@ -25,146 +26,107 @@
 
 body {
   color: var(--p-txt-cl);
-  background-color: white;
+  background-color: var(--white-bg-cl);
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .logo-dark {
-  color: #4d5ae5;
+  color: var(--iris-logo-cl);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  position: absolute;
-  width: 115px;
-  height: 24px;
-  left: 156px;
-  top: 24px;
+  letter-spacing: 0.03em;
 }
 .logo-dark span {
-  color: #2e2f42;
+  color: var(--main-page-bg-cl);
+}
+.link {
   text-decoration: none;
-  font-family: "Raleway";
+}
+.nav-link {
+  color: var(--title-txt-cl);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover {
+  color: var(--iris-logo-cl);
+}
+
+.contact-link {
+  color: var(--title-txt-cl);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
+}
+.contact-link:focus,
+.contact-link:hover {
+  color: var(--iris-logo-cl);
 }
 .main-button:hover {
-  color: white;
+  color: var(--white-bg-cl);
   background-color: var(--prt-active-button);
   cursor: pointer;
 }
 .main-button {
-  color: white;
+  color: var(--white-bg-cl);
   background-color: var(--prt-button-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
-.site-nav a {
-  color: #2e2f42;
-  text-decoration: none;
-  text-align: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  width: 261px;
-  height: 24px;
-  left: 347px;
-  top: 24px;
+.list {
+  list-style: none;
 }
 
 .main-title {
-  color: white;
-  font-family: "Roboto";
-  font-style: normal;
+  color: var(--white-bg-cl);
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
 }
 .main-page-bg {
   background-color: var(--main-page-bg-cl);
 }
-.big-title {
+title {
   color: var(--title-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
   font-size: 36px;
   line-height: 1.111;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
-.benefits h3 {
+.sub-title {
   color: var(--title-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 
-.benefits p {
+.text {
   color: var(--p-txt-cl);
-  font-family: "Roboto";
-  font-size: 16px;
   line-height: 1.5;
-}
-.team h3 {
-  color: var(--title-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.team p {
-  color: var(--p-txt-cl);
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .portf-button .button:hover {
-  color: #f4f4fd;
+  color: var(--ptr-main-button);
   background-color: var(--prt-active-button);
   cursor: pointer;
 }
 .portf-button button {
-  color: #4d5ae5;
+  color: var(--prt-active-button);
   background-color: var(--cloud-bg-cl);
-}
-
-.site-nav .link {
-  color: var(--title-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
+  letter-spacing: 0.04em;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.site-nav .link:hover {
-  color: var(--iris-logo-cl);
-}
-
-.contact-nav li a {
-  text-decoration: none;
-  color: var(--title-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.contact-nav li a:focus,
-.contact-nav li a:hover {
-  color: var(--iris-logo-cl);
 }
 
 .footer {
@@ -173,51 +135,20 @@ body {
 
 .footer p {
   color: var(--footer-p-txt-cl);
-  font-family: "Roboto";
-  font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .logo-light {
-  color: #4d5ae5;
+  color: var(--iris-logo-cl);
   text-decoration: none;
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .logo-light span {
-  color: #f4f4fd;
-  text-decoration: none;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.16;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.main-portf h2 {
-  color: var(--title-txt-cl);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.main-portf p {
-  color: var(--p-txt-cl);
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 1.5;
+  color: var(--light-logo-footer-cl);
 }
