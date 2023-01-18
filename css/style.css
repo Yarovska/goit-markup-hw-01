@@ -27,9 +27,7 @@
 body {
   color: var(--p-txt-cl);
   background-color: var(--white-bg-cl);
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -103,7 +101,7 @@ title {
   text-transform: capitalize;
 }
 
-.sub-title {
+.section-subtitle {
   color: var(--title-txt-cl);
   font-weight: 500;
   font-size: 20px;
@@ -111,7 +109,7 @@ title {
   letter-spacing: 0.02em;
 }
 
-.text {
+.section-text {
   color: var(--p-txt-cl);
   line-height: 1.5;
   letter-spacing: 0.02em;
