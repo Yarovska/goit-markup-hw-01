@@ -93,7 +93,7 @@ body {
 .main-page-bg {
   background-color: var(--main-page-bg-cl);
 }
-title {
+.section-title {
   color: var(--title-txt-cl);
   font-size: 36px;
   line-height: 1.111;
