@@ -84,9 +84,11 @@ p {
 .header-container {
   display: flex;
   align-items: center;
+  
 }
 .header {
   border-bottom: 1px solid var(--footer-p-txt-cl);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-dark {
@@ -178,11 +180,33 @@ p {
   width: 504px;
 }
 .main-page-bg {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
   background-color: var(--main-page-bg-cl);
   text-align: center;
   padding: 188px 0px;
-}
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/imgs-bg/bg-main-page.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
+}
+.benefits-icon{
+    background-color: var(--cloud-bg-cl);
+    border-radius: 4px;
+    width: 264px;
+height: 112px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+}
+.b-icon{
+    height: 64px;
+    width: 64px;
+}
 .section-benefits {
   padding-bottom: 0;
 }
@@ -228,6 +252,7 @@ p {
 .team-list {
   display: flex;
   gap: 24px;
+  
 }
 .team-bg {
     padding-bottom: 32px;
@@ -241,8 +266,61 @@ border-radius: 0px 0px 4px 4px;
 }
 .team-bg > p {
   text-align: center;
+  margin-bottom: 8px;
 }
-
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    
+}
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--iris-logo-cl);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.social-link:hover{
+background-color: var(--prt-active-button);
+}
+.social-icon{
+    fill: var(--white-bg-cl);
+    height: 16px;
+}
+.customers{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+.customers-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-bg-cl);
+    border: 1px solid #8E8F99;
+border-radius: 4px;
+    width: 168px;
+    height: 88px;
+}
+.customers-link:hover{
+    border:1px solid var(--prt-active-button);
+   
+}
+.customers-section >h2{
+    margin-bottom: 72px;
+}
+ .logo-icon{
+    fill: #8E8F99;
+    height:56px ;
+ }
+    
+.logo-icon:hover{
+    fill: var(--prt-active-button);
+}
 .portf {
   padding-top: 96px;
 }
@@ -257,6 +335,8 @@ border-radius: 0px 0px 4px 4px;
   color: var(--ptr-main-button);
   background-color: var(--prt-active-button);
   cursor: pointer;
+  border: 1px solid var(--prt-active-button);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portf-button button {
   color: var(--prt-active-button);
@@ -276,6 +356,9 @@ border-radius: 0px 0px 4px 4px;
 
 .portf-item {
   flex-basis: calc((100%- (var(--indent) * (var(--items)-1))) / var(--items));
+}
+.portf-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .portf-descr {
   padding-top: 32px;
@@ -306,6 +389,11 @@ border-radius: 0px 0px 4px 4px;
   letter-spacing: 0.02em;
 }
 
+.footer-list{
+    display: flex;
+    gap:120px;
+}
+
 .logo-light {
   color: var(--iris-logo-cl);
   text-decoration: none;
@@ -321,3 +409,33 @@ border-radius: 0px 0px 4px 4px;
 .logo-light span {
   color: var(--light-logo-footer-cl);
 }
+
+.social-wrapper >h2{
+    color: var(--white-bg-cl);
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+margin-bottom: 16px;
+}
+.footer-social{
+    display: flex;
+    gap: 16px;
+}
+.footer-link{
+    display: flex;
+    justify-content: center;
+     background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.footer-link:hover{
+    background-color: var(--success-cl);
+}
+.footer-icon{
+    fill: var(--white-bg-cl);
+    align-content: center;
+}
+
+ 
