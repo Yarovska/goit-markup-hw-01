@@ -331,7 +331,8 @@ p {
   margin-bottom: 72px;
 }
 
-.portf-button .button:hover {
+.portf-button .button:hover,
+.portf-button .button:focus {
   color: var(--ptr-main-button);
   background-color: var(--prt-active-button);
   cursor: pointer;
@@ -396,7 +397,9 @@ p {
 .footer-list {
   display: flex;
 }
-
+.logo-icon{
+    height: 56px;
+}
 .logo-light {
   color: var(--iris-logo-cl);
   text-decoration: none;
