@@ -484,7 +484,7 @@ font-size: 36px;
 line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 32px;
+  /* margin-top: 32px; */
   text-align: center;
   text-transform: capitalize;
 }
@@ -560,10 +560,10 @@ font-weight: 500;
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 40px 24px;
     justify-content: center;
-    margin-left: calc(-1 * var(--indent));
-    margin-top: calc(-1 * var(--indent));
+    /* margin-left: calc(-1 * var(--indent));
+    margin-top: calc(-1 * var(--indent)); */
     }
 }
   @media screen and (min-width: 1200px) {
@@ -598,9 +598,9 @@ font-weight: 500;
 
 @media screen and (min-width: 768px) {
   .team-bg {
-    flex-basis: calc(100% / - 24px);
+    /* flex-basis: calc(100% / - 24px);
     margin-top: 24px;
-    margin-left: 24px;
+    margin-left: 24px; */
   }
 }
 
@@ -1103,8 +1103,8 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   background-color: var(--white-bg-cl);
-  width: 408px;
-  height: 576px;
+  /* min-width: 408px;
+  min-height: 576px; */
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1346,13 +1346,13 @@ transition: background-color var(--transit-duration);
 
 @media screen and (max-width: 427px) {
   .menu-container {
-    padding-top: 80px;
+    /* padding-top: 80px;
     padding-left: 40px;
     width: 428px;
-  height: auto;
+  height: auto; */
   }
 }
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 768px) {
   .menu-container {
     display: none;
     
@@ -1375,7 +1375,7 @@ transition: background-color var(--transit-duration);
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 284px;
+  margin-bottom: auto;
 }
 
 .mobile-menu-link {
@@ -1430,7 +1430,7 @@ height: 40px;
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 428px) {
   .tel {
     font-size: 24px;
     line-height: 1.2;
@@ -1444,8 +1444,8 @@ height: 40px;
 
 .mobile-social-list {
   display: flex;
-  gap: 56px;
-  margin-bottom: 40px;
+  gap: 36px;
+   margin-bottom: 40px; 
 }
 
 
